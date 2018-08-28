@@ -17,9 +17,6 @@ class Pokemon
     pokemons= db.execute("SELECT * FROM pokemon WHERE id=?",id).flatten
     Pokemon.new(id: pokemons[0], name: pokemons[1],type: pokemons[2], db: db)
   end
-  def bonus(hp=60)
-    
-    
-  end
+
   
 end
